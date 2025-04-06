@@ -96,11 +96,18 @@
             i’m not asking you to act like nothing changed. i just hope you can see that i’m owning up to my mistakes now. i’m sorry, 
             and i hope we can still talk. i’m truly sorry for everything that i did and everything that happened.
         </p>
-    </div>
-<div style="text-align: center; margin-top: 20px;">
-    <a href="hi-angelica.html" style="display: inline-block; padding: 10px 20px; font-size: 16px; text-decoration: none; background-color: #d3d3d3; color: black; border: 1px solid black; border-radius: 5px;">
-        Back to Hi Angelica
-    </a>
-</div>
+  </div>
+
+    <script>
+        function goToSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
 </body>
 </html>
